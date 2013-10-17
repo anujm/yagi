@@ -11,7 +11,7 @@ test_xml_generator_values = {'tenant_id': 2882,
                              'is_se_linux': 'false', 'is_managed': 'false',
                              'bandwidth_in': 1001,
                              'bandwidth_out': 19992,
-                             'flavor': 10}
+                             'flavor': 40}
 
 
 def generate_verified_message_in_cuf_format(values):

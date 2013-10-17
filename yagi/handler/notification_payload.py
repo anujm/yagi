@@ -1,4 +1,5 @@
 import datetime
+import yagi.config
 
 
 class NotificationPayload(object):
@@ -22,7 +23,8 @@ class NotificationPayload(object):
 
         self.tenant_id = payload_json['tenant_id']
         self.instance_id = payload_json['instance_id']
-        self.flavor = payload_json['instance_type_id']
+        field_name = yagi.config.get('nova', 'nova_flavor_field_name')
+        self.flavor = payload_json[field_name]
 
     def start_time(self):
         start_time = max(self.launched_at, self.audit_period_beginning)

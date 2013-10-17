@@ -56,6 +56,9 @@ class CufPubTests(unittest.TestCase):
                 'retries': 1,
                 'failures_before_reauth': 5
 
+            },
+            'nova': {
+                'nova_flavor_field_name': 'dummy_flavor_field_name'
             }
         }
 
@@ -99,7 +102,7 @@ class CufPubTests(unittest.TestCase):
                      'image_meta': {'com.rackspace__1__options': '1'},
 
                      'instance_id': '56',
-                     'instance_type_id': '10',
+                     'dummy_flavor_field_name': '40',
                      'launched_at': '2012-09-15 12:51:11',
                      'deleted_at': ''}
             }
@@ -133,7 +136,7 @@ class CufPubTests(unittest.TestCase):
                      'image_meta': {'com.rackspace__1__options': '1'},
 
                      'instance_id': '56',
-                     'instance_type_id': '10',
+                     'dummy_flavor_field_name': '40',
                      'launched_at': '2012-09-15 12:51:11',
                      'deleted_at': ''}
             }
@@ -165,7 +168,7 @@ class CufPubTests(unittest.TestCase):
                      'image_meta': {'com.rackspace__1__options': '1'},
 
                      'instance_id': '56',
-                     'instance_type_id': '10',
+                     'dummy_flavor_field_name': '40',
                      'launched_at': '2012-09-15 12:51:11',
                      'deleted_at': ''}
             }
